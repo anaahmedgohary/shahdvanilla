@@ -1,0 +1,555 @@
+@import url('https://fonts.googleapis.com/css2?family=Blaka&family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi&family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+html, body {
+    background-size: cover;
+    background-image: url(images/backgBurger.jpg);
+    background-attachment: fixed;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1.7%;
+    margin-bottom: 4%;
+
+}
+
+
+
+.main-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1%;
+    align-items: center;
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 505px;
+    letter-spacing: 4px;
+    font-size: larger;
+    font-style: italic;
+    font-stretch: extra-expanded;
+    font-display: flex;
+    color: blanchedalmond;
+}
+
+.main-title p{
+    font-size: 80px;
+}
+
+.main-subtitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+    align-items: center;
+    font-family: 'Reem Kufi', sans-serif;
+    color: blanchedalmond;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-nav{
+    background-color: rgb(168, 43, 17);
+    margin-bottom: 10%;
+}
+
+.nav-element{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 21px;
+    background-color: rgb(10, 106, 86);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: rgb(189, 147, 2);
+    font-weight: bolder;
+    background-color: transparent;
+    margin: 6px;
+    text-align: center;
+    align-items: center;
+}
+
+.nav-link:hover{
+    color: rgb(209, 167, 22);
+}
+
+
+
+
+
+.gb-title{
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 2%;
+    align-items: center;
+}
+
+.gb-title h2{
+    text-align: center;
+    align-items: center;
+    border: solid black;
+    color: blanchedalmond;
+    background-image: radial-gradient(rgba(90, 0, 0, 1),rgba(168, 43, 17, 1), rgba(189, 147, 2, 1));
+}
+
+
+
+.slider{
+    align-items: center;
+    justify-content: center;
+}
+
+.slides{
+display: flex;
+justify-content: center;
+align-items: center;
+height: fit-content;
+flex-wrap: wrap;
+}
+
+
+.slide{
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.slide:not(:last-child){
+    text-decoration: none;
+    
+}
+
+.slide img{
+    border: 10px solid;
+}
+
+.slide img:hover{
+    border-radius: 10%;
+    transition: 0.4s;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.gb-image {
+    height: 400px;
+    width: 300px;
+}
+
+.product-name{
+    font-size: 1.6em;
+    text-align: center;
+    color: blanchedalmond;
+    background-color: rgba(10, 10, 10, 0.6);
+}
+
+.product-price{
+    font-size: 1.6em;
+    text-align: center;
+    color: rgba(255, 205, 205, 1);
+    background-color: rgba(10, 10, 10, 0.6);
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top:10%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content{
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    height: 80%;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: antiquewhite;
+    height: 40px;
+    padding-top: 1%;
+    padding-bottom: 4%;
+    font-family: 'El Messiri', sans-serif;
+    font-size: 1.8em;
+    font-weight: bolder;
+    align-items: center;
+    
+}
+
+.add-to-c{
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    font-weight: bolder;
+    font-size: 1.5em;
+    text-align: center;
+    align-items: center;
+    background-color: rgba(42, 165, 118, 0.8);
+    padding: 10px 0;
+    height: 50px;
+}
+
+.add-to-c a{
+    color: antiquewhite;
+    text-decoration: none;
+    background-color: transparent;
+    border: solid;
+    padding: 5px;
+    text-align: center;
+    align-items: center;
+}
+
+.add-to-c a:hover{
+    color: rgba(42, 165, 118, 1);
+    border-color: tomato;
+    background-color: rgb(217, 228, 154);
+}
+
+.modal-content, #caption{
+    animation-name: zoom;
+    animation-duration: 0.7s;
+}
+
+@keyframes zoom{
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+.close{
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    color: antiquewhite;
+    font-size:60px;
+    font-weight: bolder;
+    transition: 0.17s;
+    padding: 0.5% 2%;
+    border-radius: 50%;
+}
+
+.close:hover,
+.close:focus{
+    color: burlywood;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.addto-div{
+    
+    color: blue;
+}
+
+
+.add-to-btn{
+    display: flex;
+    margin: auto;
+    cursor: pointer;
+    font-size: 2em;
+    background-color: rgba(189, 147, 2, 1);
+    color: rgba(10, 106, 86, 1);
+    padding: 2%;
+    text-align: center;
+    justify-content: center;
+}
+
+.add-to-btn:hover {
+    background-color: rgba(10, 106, 86, 1);
+    color: blanchedalmond;
+    padding-right: 20%;
+    padding-left: 20%;
+    transition: 0.5s;
+}
+
+
+.cart-container{
+    display: none;
+    justify-content: center;
+    text-align: center;
+}
+
+.cart-title{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: 900;
+    
+}
+
+#cart-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-column{
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    max-width: 200px;
+    width: 25%;
+    margin-left: 3px;
+    margin-left: 3px;
+}
+
+.cart-row{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.cart-item-img {
+    height: 50px;
+    width: 100px;
+}
+
+.total-container{
+    display: none;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.total-title{
+    margin-right: 8px;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: blanchedalmond;
+}
+
+.total-sign{
+    margin-right: 2px;
+    color: darkgreen;
+    font-size: 1.2em;
+    font-weight: lighter;
+}
+
+.total-num{
+    margin-right: 8px;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: blanchedalmond;
+}
+
+
+
+/* #checkout-cart{
+    display: none;
+    justify-content: end;
+    margin-top: 50px;
+    
+}
+
+.checkout-btn{
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 2em;
+    background-color: rgb(201, 128, 45);
+    color: rgb(20, 37, 92);
+    border-radius: 10%;
+}
+
+.checkout-btn:hover{
+    padding: 1%;
+    border-radius: 0%;
+    transition: 0.5s;
+    background-color: rgb(200, 200, 190);
+    border: 10px double black;
+    color: rgb(10, 106, 86);
+} */
+
+#viewCart{
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    /* position: absolute;
+    left: auto;
+    top: 39.3%; 
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%; */
+    background-image: linear-gradient(180deg, rgb(255, 217, 0) , rgb(255, 255, 255));
+    background: transparent;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    height: 20vh;
+    width: auto;
+    margin: auto;
+    
+}
+
+#viewCartBtn{
+    display: flex;
+    width: 14%;
+    height: 60%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(253, 249, 10);
+    border-radius: 10%;
+    cursor: pointer;
+    text-decoration: none;
+    border: solid 10%;
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+      opacity: .8;
+      background-color: brown;
+    }
+  }
+
+#viewCartBtn:hover{
+    background-color: rgb(0, 214, 98);
+}
+
+#viewCartBtn:hover .carticon{
+    opacity: 0.7;
+}
+
+.carticon{
+    height: 90%;
+    width: 90%;
+    border-radius: 20%;
+    opacity: 1;
+    background-color: black;
+}
+
+#cartCounter{
+    position: absolute;
+    z-index: 1;
+    margin-top: -3.2%;
+    margin-left: -5.3%;
+    background-color: rgb(0, 154, 77);
+    text-align: center;
+    font-size: 1.5vw;
+    font-weight: bolder;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding-left: .95%;
+    padding-right: .95%;
+    padding-top: .3%;
+    padding-bottom: .3%;
+    border: solid 1px black;
+    border-radius: 50%;
+    
+}
+
+
+    
+
+#viewCart div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    text-align: center;
+    
+    
+}
+
+/* .viewCart-sub{
+    background-color: transparent;
+    color: bisque;
+    text-align: center;
+    font-size: 1.1em;
+    align-items: center;
+    display: block;
+    justify-content: center;
+    height: 40%;
+    
+} */
+
+.cart-icon{
+    color: rgb(24, 22, 23);
+    background-color: transparent;
+    font-size: 3em;
+}
+
+ /* .cart-icon:hover {
+    color: blanchedalmond;
+    
+}  */
+
+
+
+.cart-el-div{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* .cart-rmov-btn{
+    cursor: pointer;
+    background-color: rgb(189, 147, 2);
+} */
+
+
+
+
+
+
+
+/* #showCartBtn{
+    font-size: 5em;
+    display: flex;
+    justify-content: center;
+    border-radius: 20%;
+    padding: 5%;
+    background-color: black;
+    color: antiquewhite;
+    box-shadow: 5px;
+}
+
+#showCartBtn:hover{
+    opacity: 0.8;
+    color: green;
+    cursor: pointer;
+} */

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandwiches</title>
+    <script src="https://kit.fontawesome.com/a41d879c1a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Sandwiches.css">
+    <link rel="stylesheet" href="w3.css">
+    
+    <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="Sandwiches.js"></script>
+</head>
+<body>
+    <header>
+        <div class="main-title">
+            <p>شهد</p>
+        </div>
+        <div class="main-subtitle">
+            <i class="fa-solid fa-pizza-slice fa-2x"></i>
+            <span>&nbsp&nbsp</span>
+            <h3> أحلي أكل عندنا </h3>
+            <span>&nbsp&nbsp</span>
+            <i class="fa-solid fa-burger fa-2x"></i>
+        </div>
+        <nav class="nav main-nav">
+            <span class="nav-element"><a class="nav-link" href="index.html">Home</a></span>
+            <span class="nav-element"><a class="nav-link" href="Sandwiches.html">Sandwiches</a></span>
+            <span class="nav-element">Dishes</span>
+            <span class="nav-element">Meals</span>
+            <span class="nav-element">Pizza</span>
+            <span class="nav-element">Extras</span>
+            <span class="nav-element">Sweets</span>
+            <span class="nav-element">Drinks</span>
+            <span class="nav-element">Famiyl Meals</span>
+        </nav>
+    </header>
+
+    <div id="viewCart">
+        <a id="viewCartBtn" href="cart.html" title="View Cart">
+            <img class="carticon" src="images/carticon.jpg" alt="">
+            
+            <!-- <i class="fa-solid fa-basket-shopping fa-2x cart-icon"></i>  --> 
+        </a>
+        <div>
+            <span id="cartCounter">0</span>
+            
+        </div>
+        
+    </div>
+
+    <div class="slider">
+        <div class="gb-title">
+            <h2>Sandwiches</h2>
+        </div>
+        <div class="slides">
+            <div class="slide">
+                <img class="gb-image myImg" src="images/1Sandwiches.jpg" alt="طعمية" title="View Image">
+                <div class="product-name">طعمية</div>
+                <div class="product-price">10</div>
+                <div>
+                    <button class="add-to-btn" type="button" title="Add To Cart">أضف للسلة</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img class="gb-image myImg" src="images/2Sandwiches.jpg" alt="جبنة رومي" title="View Image">
+                <div class="product-name">جبنة رومي</div>
+                <div class="product-price">15</div>
+                <div class="addto-div">
+                    <button class="add-to-btn" type="button" title="Add To Cart">أضف للسلة</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img class="gb-image myImg" src="images/3Sandwiches.jpg" alt="شاورما" title="View Image">
+                <div class="product-name">شاورما</div>
+                <div class="product-price">25</div>
+                <div>
+                    <button class="add-to-btn" type="button" title="Add To Cart">أضف للسلة</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img class="gb-image myImg" src="images/4Sandwiches.jpg" alt="لحمة مفرومة" title="View Image">
+                <div class="product-name">لحمة مفرومة</div>
+                <div class="product-price">30</div>
+                <div>
+                    <button class="add-to-btn" type="button" title="Add To Cart">أضف للسلة</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div id="viewCart">
+        <a id="viewCartBtn" class="atag" href="cart.html">
+            
+            <i class="fa-solid fa-basket-shopping fa-2x cart-icon"></i>  
+        </a>
+        <div>
+            <span id="cartCounter">0</span>
+            <!=-- <span class="viewCart-sub">in cart</span> -=->
+        </div>
+        <!=- <div class="cart-el-div">
+            <button id="clearCartBtn" type="button">Clear Cart</button> 
+        </div> -=->
+    </div> -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+
+        <img class="modal-content" id="img01">
+
+        <div id="caption"></div>
+        <div class="add-to-c"><a href="details.html" target="_blank">View Details</a></div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div id="cart" class="cart-container">
+        <span class="cart-title">Cart</span>
+        <div id="cart-body">
+            <div class="cart-Image cart-column">
+                <span>Image</span>
+            </div>
+            <div class="cart-Name cart-column">
+                <span>Name</span>
+            </div>
+            <div class="cart-Price cart-column">
+                <span>Price</span>
+            </div>
+            <div class="cart-Price cart-column">
+                <i class="fa-solid fa-square-minus"></i>
+            </div>
+        </div>
+        
+        <div id="cart-Rows">
+            <div class="cart-row">
+                <div class="cart-column">
+                    <img class="cart-item-img" src="">
+                </div>
+                <div class="cart-column">
+                    <span class="cart-item-name">Pantso Red</span>
+                </div>
+                <div class="cart-column">
+                    <span class="cart-item-price">600</span>
+                </div>
+                <div class="cart-column">
+                    <button class="cart-rmov-btn" type="button">Return</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Tottall" class="total-container">
+        <span class="total-title">Total:</span>
+        <span class="total-sign">$</span>
+        <span id="TotalValue" class="total-num">0</span>
+    </div>
+    <!-- <div id="checkout-cart">
+        <button id="checkoutbtn" class="checkout-btn" type="button">Checkout</button>
+    </div> -->
+    <!-- <div id="Cart_Item">
+        <div class="cart-row">
+            <div class="cart-column">
+                <img class="cart-item-img" src="images/tamara-bellis-IwVRO3TLjLc-unsplash.jpg">
+            </div>
+            <div class="cart-column">
+                <span>Pantso Red</span>
+            </div>
+            <div class="cart-column">
+                <span>600</span>
+            </div>
+        </div>
+        <div id="Tottall" class="total-container">
+            <span class="total-title">Total</span>
+            <span class="total-sign">$</span>
+            <span id="TotalValue" class="total-num">0</span>
+        </div>
+    </div> -->
+</body>
+</html>

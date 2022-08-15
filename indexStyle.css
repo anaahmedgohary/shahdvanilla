@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Blaka&family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi&family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* background-color: rgba(168, 43, 17, 0.8); */
+}
+
+html, body {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1.7%;
+    margin-bottom: 4%;
+    background-image: url(images/restaurantMural.jpg);
+    background-size: contain;
+    
+    background-color: rgba(41, 38, 38, 0.6);
+    background-blend-mode: multiply;
+}
+
+.transBackg{
+    background: transparent;
+}
+
+.header{
+    background-image: url(images/backgroundvegetables.jpeg);
+    background-size: cover;
+    background-color: rgba(41, 38, 38, 0.4);
+    background-blend-mode: multiply;
+    
+}
+
+.main-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1%;
+    align-items: center;
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 505px;
+    letter-spacing: 4px;
+    font-size: larger;
+    font-style: italic;
+    font-stretch: extra-expanded;
+    font-display: flex;
+    color: bisque;
+    background: transparent;
+}
+
+.main-title p{
+    font-size: 80px;
+    background: transparent;
+}
+
+.main-subtitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+    align-items: center;
+    background: transparent;
+    font-family: 'Reem Kufi', sans-serif;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-nav{
+    background-color: rgb(168, 43, 17);
+}
+
+.nav-element{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 21px;
+    background-color: rgb(10, 106, 86);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: rgb(189, 147, 2);
+    font-weight: bolder;
+    background-color: transparent;
+    margin: 6px;
+    text-align: center;
+    align-items: center;
+}
+
+.nav-link:hover{
+    color: rgb(209, 167, 22);
+}
+
+/*.gb-image {
+    height: 300px;
+    width: 200px;
+}*/
+
+.filter-btn{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(72, 92, 110);
+    border-radius: 10%;
+    color: white;
+    font-weight: bolder;
+    font-family: sans-serif;
+    margin: 5px;
+    padding: 5px;
+}
+
+.filter-elmnt input{
+    display: flex;
+    width: 100%;
+}
+
+.bacg-att{
+    background-image: url(images/);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.filter-container{
+    justify-content: center;
+    
+
+}
+
+.main-filter{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.3em;
+    
+    
+}
+
+.main-filter h4{
+    color: aliceblue;
+    justify-content: center;
+    border: 20px solid rgb(83, 59, 59);
+    padding: 4px;
+    margin-bottom: 0%;
+    background-color: rgba(168, 43, 17, 0.8);
+}
+
+.main-filter div{
+    border: 2px solid;
+    border-top: none;
+    background-color: rgba(168, 43, 17, 0.8);
+}
+
+.main-filter button{
+    color: rgba(168, 43, 17, 0.8);
+    font-weight: 900;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
+.filter-elments{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gb-title-pos{
+    margin-bottom: 0%;
+    
+}
+
+.gb-title{
+    font-size: 2em;
+    text-align: center;
+    align-items: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    color: blanchedalmond;
+    background-color: rgba(168, 43, 17, 0.8);
+    
+}
+
+.gallery-block{
+    margin-top: 10%;
+    justify-content: center;
+    display: flex;
+    margin-left: -10%;
+    margin-right: -10%;
+    height: 400px;
+}
+
+
+
+.slider{
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+}
+
+.slides{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
+
+
+.slide{
+    width: 20%;
+    border-radius: 10%;
+    background: transparent;
+}
+
+.slide:not(:last-child){
+    margin-right: 3px;
+}
+
+.slide img{
+    width: 99%;
+    height: 99%;
+    border-radius: 10%;
+}
+
+.slide img:hover{
+    z-index: 1;
+    background-color: black;
+    border: 1px solid;
+    box-shadow: 1px black;
+    border-radius: 10%;
+    transition: 1s;
+}
+
+/*css for manual slide navigation*/
+
+.manual-btn:not(:last-child){
+    margin-right: 20px;
+}
+
+.manual-btn:hover{
+    background: #40D3DC;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -200px;
+}
+
+/*css for automatic navigation*/
+
+.navigation-auto div:not(:last-child){
+    margin-right: 20px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #40D3DC;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #40D3DC;
+}
+
+.cat-row-image{
+    cursor: pointer;
+}
+
+.hide-popup{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top:10%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.show-popup{
+    display: block;
+    position: fixed;
+    z-index: 1;
+    padding-top:20%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.poped-image{
+    display: block;
+    margin: auto;
+    width: 80%;
+    height: 80%;
+    max-width: 700px;
+}
+
+#close-icon{
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    color: antiquewhite;
+    font-size:20px;
+    font-weight: bolder;
+    transition: 0.17s;
+    padding: 0.4%;
+    border-radius: 10%;
+    cursor: pointer;
+    color: rgba(189, 147, 2, 1);
+    background-color: rgba(10, 106, 86, 1);
+}
+
+#popCaption{
+    display: block;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    font-family: 'Reem Kufi';
+    font-size: 1.5em;
+    font-weight: bolder;
+    max-width: 700px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-family: 'El Messiri', sans-serif;
+    color: blanchedalmond;
+}
+
+
+
+
+.FOOTER{
+    margin-top: 40%;
+    background-color: rgba(168, 43, 17, .9);
+}
+
+.footer-title{
+    font-size: 3em;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-bottom: solid;
+    
+}
+
+.above-icon{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-top: 1%;
+}
+
+.footer-icon{
+    width: 40px;
+    height: 40px;
+}
+
+.fotr-icon-div{
+    display: flex;
+    padding: 2%;
+    justify-content: space-around;
+    background-color: transparent;
+    border-bottom: solid;
+}
+
+.fotr-icon-div a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 10%;
+    border: solid black;
+    padding: 1%;
+}
+
+.phone-num-div{
+    
+    border-bottom: solid;
+    padding: 1%;
+    background-color: rgba(168, 43, 17, 1);
+    
+}
+
+.phone-num-div span{
+    padding-left: 1%;
+    color: rgba(255, 235, 235, 1);
+    font-size: 1.4em;
+    font-weight: bolder;
+}
