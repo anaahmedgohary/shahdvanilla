@@ -10,6 +10,53 @@
 
 <body>
 
+
+
+    <table class="table">
+        <thead>
+            <tr class="tbl-main-headrs">
+
+                <th class="col-2 mTHeadr" scope="col">review date</th>
+                <th class="col-2 mTHeadr" scope="col">Business Name</th>
+                <th class="col-1 mTHeadr" scope="col">Rating</th>
+                <th class="col-5 mTHeadr" scope="col">Review</th>
+                <th class="col-2 mTHeadr" scope="col">The Reviewer</th>
+                <!-- <th scope="col">Time of Order</th> -->
+            </tr>
+        </thead>
+        <tbody>
+            <!-- <?php include 'retrieveDb.php'; ?>
+
+            <?php if ($result->num_rows > 0) : ?>
+
+            <?php while ($array = mysqli_fetch_row($result)) : ?> -->
+
+            <tr class="new-review">
+                <td class="review-col date-col-cel">?php echo $array[1]; ?></td>
+                <td class="review-col rate-col-cel">?php echo $array[2]; ?></td>
+                <td class="review-col rev-col-cel">?php echo $array[3]; ?></td>
+                <td class="review-col date-col-cel">?php echo $array[4]; ?></td>
+                <th class="review-col name-col-cel">?php echo $array[5]; ?></th>
+
+            </tr>
+
+            <!-- <?php endwhile; ?>
+
+            <?php else : ?> -->
+            <tr>
+                <td colspan="3" rowspan="1" headers="">No Data Found</td>
+            </tr>
+            <!-- <?php endif; ?>
+
+            <?php mysqli_free_result($result); ?> -->
+
+        </tbody>
+    </table>
+
+
+
+
+
 </body>
 
 </html>
