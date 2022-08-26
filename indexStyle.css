@@ -119,8 +119,7 @@ html, body {
 }*/
 
 .filter-btn{
-    display: flex;
-    flex-wrap: wrap;
+    cursor: pointer;
     background-color: rgb(72, 92, 110);
     border-radius: 10%;
     color: white;
@@ -128,6 +127,11 @@ html, body {
     font-family: sans-serif;
     margin: 5px;
     padding: 5px;
+}
+
+.filter-btn:hover{
+    background-color: rgb(92, 112, 130);
+    color: rgba(90, 20, 20, 0.9);
 }
 
 .filter-elmnt input{

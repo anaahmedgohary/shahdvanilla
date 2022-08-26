@@ -32,10 +32,24 @@ function ready() {
   let checkFilters = document.getElementById("checkFilters")
   checkFilters.addEventListener("click", checkAllFilters)
 
+  //button click to check filter
+  let buttonstoc = document.getElementsByClassName("filter-btn");
+  for (let i = 0; i < buttonstoc.length; i++)
+  {
+    buttonclicked = buttonstoc[i];
+    buttonclicked.addEventListener('click', checkTheFilter)
+  }
+
 }
 
 
-
+function checkTheFilter(event)
+{
+  clickedButton = event.target;
+  clickedButtonP = clickedButton.parentElement
+  let targetbox = clickedButtonP.getElementsByClassName("filter-checkbox")[0];
+  targetbox.click();
+}
 
 function filterBlocks() {
   let sandwiches = document.getElementById("checkBox1")
