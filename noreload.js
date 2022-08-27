@@ -1,30 +1,22 @@
-
-$('document').ready(function(){
-
-     
-     
-
-
-
-
+$("document").ready(function(){
 
 
     $('#customerForm').on('submit',function(e){
 
         e.preventDefault(); //prevent default form submition
+        // make form into json
         var FormData = $('#customerForm').serialize();
 
         $.ajax({
-
             type : 'post',
             url : 'customerinfo.php',
             data : FormData,
-            dataTYpe : 'json',
+            dataType : 'json',
             encode : true,
-            beforeSend : function(){
+            /* beforeSend : function(){
 
-                $('#cusFormSubmit').html('<span class="glyphicon glyphicon-repeat fast-right-spinner"></span> Sending');
-            },
+                $('#cusFormSubmit').html('Loading');
+            }, */
             success : function(response){
 
                 response = JSON.parse(response);
@@ -35,6 +27,7 @@ $('document').ready(function(){
                 }else{
 
                     $('errormessage').html(response);
+                    console.log(response)
                 }
 
             }

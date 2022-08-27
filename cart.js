@@ -99,10 +99,15 @@ function updateTotalPrice()
         total += (itemPriceValue * qty)
     }
 
-    document.getElementById("TotalValue").innerText = total
-
+    document.getElementById("TotalValue").innerText = total;
+    //$("#orderTotal").val(total)
+    document.getElementById("orderTotal").value = total;
     // Transfer Cart Total to Payment method Paypal
     /* let valueofPPpayment = total */
+    //localStorage.setItem('mycart', JSON.stringify(document.getElementById("cart-Rows").innerHTML))}
+    let cartBody = document.getElementById("cart-Rows")
+    let newcartBody = cartBody.innerHTML
+    localStorage.setItem('mycart', JSON.stringify(newcartBody))
 }
 
 
@@ -115,8 +120,8 @@ function clearCart() {
     }
 
     //update local storage values
-    let cartBody = document.getElementById("cart-Rows")
-    let newcartBody = cartBody.innerHTML
+    let cartBody2 = document.getElementById("cart-Rows")
+    let newcartBody2 = cartBody.innerHTML
     localStorage.removeItem('mycart')
 
     updateTotalPrice()

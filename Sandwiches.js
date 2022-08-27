@@ -80,7 +80,7 @@ function whatToAdd (a, b, c) {
         <span class="cart-item-name">${b}</span>
     </div>
     <div class="cart-column cart-qty">
-        <input class="cart-item-qty" type="number" value="1">
+        <input class="cart-item-qty" type="number" min="1" step="1" />
     </div>
     <div class="cart-column cart-Price">
         <span class="cart-item-price">${c}</span>
