@@ -285,9 +285,9 @@ html, body {
     top: 10%;
     right: 5%;
     color: antiquewhite;
-    font-size:1.6vw;
+    font-size:1.2vw;
     font-weight: bolder;
-    width:50%;
+    
     transition: 0.17s;
     padding: 0.4%;
     border-radius: 10%;
