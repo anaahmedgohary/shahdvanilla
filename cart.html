@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/a41d879c1a.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="./cart.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script
         src="https://www.paypal.com/sdk/js?client-id=AU7LyxXRcfaadw6vu87jZOtTMqnXFhvheQk111_36IQlAEexCv5VdVXEtPByzI2iREqZtx9nKXWD2mvK">
@@ -35,13 +36,14 @@
         <nav class="nav main-nav">
             <span class="nav-element"><a class="nav-link" href="index.html">Home</a></span>
             <span class="nav-element"><a class="nav-link" href="Sandwiches.html">Sandwiches</a></span>
-            <span class="nav-element">Dishes</span>
+            <!-- <span class="nav-element">Dishes</span>
             <span class="nav-element">Meals</span>
             <span class="nav-element">Pizza</span>
             <span class="nav-element">Extras</span>
             <span class="nav-element">Sweets</span>
-            <span class="nav-element">Drinks</span>
-            <span class="nav-element">Famiyl Meals</span>
+            <span class="nav-element">Drinks</span> -->
+            <span class="nav-element"><a class="nav-link" href="./neworders.php" target="_blank"
+                    rel="noopener noreferrer">Orders</a></span>
         </nav>
     </header>
 
@@ -117,19 +119,19 @@
             </div>
             <div>
                 <label for="ordersnap">ordersnap</label>
-                <input id="orderSnap"  name="ordersnap" readonly minlength="4" required />
+                <input id="orderSnap" name="ordersnap" readonly minlength="4" required />
             </div>
             <div>
                 <label for="orderid">order-ID:</label>
                 <input id="OrderID" readonly minlength="4" required name="orderid" />
                 <button id="generateOId" id="OrderID">get id</button>
             </div>
-            
+
             <input id="cusFormSubmit" type="submit" />
         </form>
-        <div id="chosePayment">
+        <!-- <div id="chosePayment">
             <button>Choose Payment Method</button>
-        </div>
+        </div> -->
     </div>
     <br>
     <!-- <div id="orderIdDiv">
@@ -143,19 +145,22 @@
     <br><br>
     <div style="font-size: 2em; color: blanchedalmond; font-weight: bolder; ">Pay Here 👇</div>
     <div id="paypalPayBtn"></div>
+    <div id="transaction-id"></div>
 
 
 
-    
 
-    
-   
+
+    <div style="display: none;">
+        <input id="oiyiyi" />
+    </div>
+
     <script src="noreload.js"></script>
 
     <script>
-        $("#orderSnap").val(localStorage.getItem("mycart")); 
+        $("#orderSnap").val(localStorage.getItem("mycart"));
     </script>
-    
+
 </body>
 
 </html>
