@@ -155,7 +155,11 @@ body {
     display: none;
     position: fixed;
     z-index: 1;
+<<<<<<< HEAD
     padding-top: 10%;
+=======
+    padding-top:1%;
+>>>>>>> a3f8f8ab8d9f943cd9216ea68572a687b71dc527
     left: 0;
     top: 0;
     width: 100%;
@@ -636,6 +640,7 @@ body {
 #customerForm input {
     background-color: white;
 }
+<<<<<<< HEAD
 
 #cusFormSubmit {
     border: solid;
@@ -673,3 +678,5 @@ body {
     font-size: 3rem;
     color: black;
 }
+=======
+>>>>>>> a3f8f8ab8d9f943cd9216ea68572a687b71dc527
