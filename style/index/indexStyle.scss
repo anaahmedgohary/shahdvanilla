@@ -165,10 +165,8 @@ body {
 
 .gallery-block{
     margin-top: 10%;
-    display: flex;
-    justify-content: center;
-    margin-left: -10%;
-    margin-right: -10%;
+    display: grid;
+    place-items: center;
 }
 
 
@@ -182,8 +180,7 @@ body {
     flex-wrap: wrap;
     gap: 10px;
     max-width: 90vw;
-    background: transparent;
-    border:solid green;
+    //border:solid green;
 }
 
 
@@ -270,6 +267,9 @@ body {
 .FOOTER{
     margin-top: 20%;
     background-color: rgba(168, 43, 17, .9);
+    max-width: 90vw;
+    margin-inline: auto;
+    border-radius: 8px 8px;
 }
 
 .footer-title{
@@ -315,9 +315,6 @@ body {
 
 
 .phone-num-div{
-    border-bottom: solid;
-    padding: 1%;
-    background-color: rgba(168, 43, 17, 1);
 
     .phones-div{
         @include flexcenter();
