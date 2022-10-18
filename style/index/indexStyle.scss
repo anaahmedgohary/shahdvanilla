@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Blaka&family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi&family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
+
+@mixin flexcenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* background-color: rgba(168, 43, 17, 0.8); */
+}
+
+body {
+    padding-bottom: 1%;
+    background-image: url(/images/restaurantMural.jpg);
+    background-size:contain;
+    background-color: rgba(41, 38, 38, 1);
+    background-blend-mode: multiply;
+}
+
+.transBackg{
+    background: transparent;
+}
+
+
+
+
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-nav{
+    //background-color: rgb(168, 43, 17);
+    background-color: transparent;
+    @include flexcenter();
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20%;
+    margin-bottom: 10%;
+}
+
+.nav-element{
+    font-size: 21px;
+    background-color: rgb(10, 106, 86);
+    border-radius: 50px 50px;
+    padding-block:1%;
+    min-width: 9rem;
+    //width: 9rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: rgb(189, 147, 2);
+    font-weight: bolder;
+    background-color: transparent;
+    margin: 6px;
+    text-align: center;
+    align-items: center;
+}
+
+.nav-link:hover{
+    color: rgb(209, 167, 22);
+}
+
+/*.gb-image {
+    height: 300px;
+    width: 200px;
+}*/
+
+.filter-btn{
+    cursor: pointer;
+    background-color: rgb(72, 92, 110);
+    border-radius: 10%;
+    color: white;
+    font-weight: bolder;
+    font-family: sans-serif;
+    margin: 5px;
+    padding: 5px;
+}
+
+.filter-btn:hover{
+    background-color: rgb(92, 112, 130);
+    color: rgba(90, 20, 20, 0.9);
+}
+
+.filter-elmnt input{
+    display: flex;
+    width: 100%;
+}
+
+
+
+.main-filter{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 0.3em;
+}
+
+.main-filter h4{
+    color: aliceblue;
+    justify-content: center;
+    border: 20px solid rgb(83, 59, 59);
+    padding: 4px;
+    margin-bottom: 0%;
+    background-color: rgba(168, 43, 17, 0.8);
+}
+
+.main-filter div{
+    border: 2px solid;
+    border-top: none;
+    background-color: rgba(168, 43, 17, 0.8);
+}
+
+.main-filter button{
+    color: rgba(168, 43, 17, 0.8);
+    font-weight: 900;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
+.filter-elments{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.gb-title{
+    font-size: 3vw;
+    text-align: center;
+    align-items: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    color: blanchedalmond;
+    //background-color: rgba(168, 43, 17, 0.8);
+    
+}
+
+.gallery-block{
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    margin-left: -10%;
+    margin-right: -10%;
+}
+
+
+
+.slider{
+    background: transparent;
+}
+
+.slides{
+    @include flexcenter();
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 90vw;
+    background: transparent;
+    border:solid green;
+}
+
+
+.slide{
+    img{
+        width: 200px;
+        height: 200px;
+        border-radius: 500px;
+        border: solid 10px transparent;
+        transition: 500ms;
+        &:hover{
+            border: solid rgba(168, 43, 17, 0.8);
+            transition: 500ms;
+        }
+    }
+}
+
+
+.cat-row-image{
+    cursor: pointer;
+}
+
+.hide-popup{
+    display: none;
+}
+
+.show-popup{
+    display: block;
+    position: fixed;
+    z-index: 1;
+    padding-top:3%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.poped-image{
+    display: block;
+    margin: auto;
+    width: 70%;
+    height: 70%;
+    max-width: 600px;
+}
+
+#close-icon{
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    color: antiquewhite;
+    font-size:1.2vw;
+    font-weight: bolder;
+    
+    transition: 0.17s;
+    padding: 0.4%;
+    border-radius: 10%;
+    cursor: pointer;
+    color: rgba(189, 147, 2, 1);
+    background-color: rgba(10, 106, 86, 1);
+}
+
+#popCaption{
+    display: block;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    font-family: 'Reem Kufi';
+    font-size: 1.7vw;
+    font-weight: bolder;
+    max-width: 400px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-family: 'El Messiri', sans-serif;
+    color: blanchedalmond;
+}
+
+
+
+
+.FOOTER{
+    margin-top: 20%;
+    background-color: rgba(168, 43, 17, .9);
+}
+
+.footer-title{
+    font-size: 3vw;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-bottom: solid;
+    
+}
+
+.above-icon{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1vw;
+    margin-top: 1%;
+}
+
+
+
+.fotr-icon-div{
+    @include flexcenter();
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-block: 2%;
+    border-bottom: solid;
+
+    a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 50px;
+    border: solid black;
+    padding: 1%;
+    .footer-icon{
+    width: 22px;
+    height: 22px;
+    }
+}
+}
+
+
+
+.phone-num-div{
+    border-bottom: solid;
+    padding: 1%;
+    background-color: rgba(168, 43, 17, 1);
+
+    .phones-div{
+        @include flexcenter();
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+}
+
+.phone-num-div span{
+    padding-left: 1%;
+    color: rgba(255, 235, 235, 1);
+    font-size: 1.7vw;
+    font-weight: bolder;
+}
